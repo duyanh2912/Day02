@@ -9,7 +9,7 @@ import Utils
 import UIKit
 
 class TriangleViewController: UIViewController, UITextFieldDelegate {
-    @IBOutlet weak var drawView: CustomTriangleView!
+    @IBOutlet weak var drawView: CustomDrawView!
     @IBOutlet weak var factorSlide: UISlider!
     
     @IBOutlet weak var perimeterLabel: UILabel!
@@ -32,11 +32,17 @@ class TriangleViewController: UIViewController, UITextFieldDelegate {
         notificationCenter.addObserver(self, selector: #selector(keyboardWillShow), name: Notification.Name.UIKeyboardWillChangeFrame, object: nil)
 
         // Do any additional setup after loading the view.
-        firstEdgeText.text = drawView.firstEdge.description
-        secondEdgeText.text = drawView.secondEdge.description
-        thirdEdgeText.text = drawView.thirdEdge.description
         
         factorSlide.value = 1
+        initialConfig()
+    }
+    
+    func initialConfig() {
+        guard let triangle = drawView as? CustomTriangleView else { return }
+        
+        firstEdgeText.text = triangle.firstEdge.description
+        secondEdgeText.text = triangle.secondEdge.description
+        thirdEdgeText.text = triangle.thirdEdge.description
         
         firstEdgeText.delegate = self
         secondEdgeText.delegate = self
@@ -53,12 +59,22 @@ class TriangleViewController: UIViewController, UITextFieldDelegate {
             let secondEdge = Float(secondEdgeText.text!),
             let thirdEdge = Float(thirdEdgeText.text!)
             else { return }
+        guard let triangleView = drawView as? CustomTriangleView else { return }
         
-        drawView.scale = CGFloat(factorSlide.value)
-        drawView.firstEdge = CGFloat(firstEdge)
-        drawView.secondEdge = CGFloat(secondEdge)
-        drawView.thirdEdge = CGFloat(thirdEdge)
-        drawView.setNeedsDisplay()
+        triangleView.scale = CGFloat(factorSlide.value)
+        triangleView.firstEdge = CGFloat(firstEdge)
+        triangleView.secondEdge = CGFloat(secondEdge)
+        triangleView.thirdEdge = CGFloat(thirdEdge)
+        triangleView.setNeedsDisplay()
+        
+        updateStats()
+    }
+    
+    func updateStats() {
+        guard let firstEdge = Float(firstEdgeText.text!),
+            let secondEdge = Float(secondEdgeText.text!),
+            let thirdEdge = Float(thirdEdgeText.text!)
+            else { return }
         
         let p = (firstEdge + secondEdge + thirdEdge) / 2
         
@@ -72,6 +88,7 @@ class TriangleViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func illuminati(_ sender: Any) {
+        view.endEditing(true)
         updateDrawView()
     }
     

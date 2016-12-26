@@ -9,8 +9,7 @@
 import UIKit
 
 @IBDesignable
-public class CustomTriangleView: UIView {
-    @IBInspectable public var scale: CGFloat = 1
+public class CustomTriangleView: CustomDrawView {
     @IBInspectable public var firstEdge: CGFloat = 150
     @IBInspectable public var secondEdge: CGFloat = 150
     @IBInspectable public var thirdEdge: CGFloat = 150

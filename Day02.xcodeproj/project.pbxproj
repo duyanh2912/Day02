@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		508785921E11789B00D18C87 /* CustomDrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508785911E11789B00D18C87 /* CustomDrawView.swift */; };
+		508785941E117AAD00D18C87 /* RectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508785931E117AAD00D18C87 /* RectViewController.swift */; };
+		508785961E117B6F00D18C87 /* CustomRectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508785951E117B6F00D18C87 /* CustomRectView.swift */; };
+		508785981E1184C900D18C87 /* CustomArcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508785971E1184C900D18C87 /* CustomArcView.swift */; };
+		5087859A1E11867500D18C87 /* ArcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508785991E11867500D18C87 /* ArcViewController.swift */; };
+		5087859C1E118D3C00D18C87 /* CustomEllipseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087859B1E118D3C00D18C87 /* CustomEllipseView.swift */; };
+		5087859E1E118EAD00D18C87 /* EllipseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087859D1E118EAD00D18C87 /* EllipseViewController.swift */; };
 		50A891401E102F600018FF6E /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A8913F1E102F600018FF6E /* ContainerViewController.swift */; };
 		50A891421E10EC310018FF6E /* CustomTriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A891411E10EC310018FF6E /* CustomTriangleView.swift */; };
 		50A891441E10F3760018FF6E /* TriangleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A891431E10F3760018FF6E /* TriangleViewController.swift */; };
@@ -60,6 +67,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		508785911E11789B00D18C87 /* CustomDrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDrawView.swift; sourceTree = "<group>"; };
+		508785931E117AAD00D18C87 /* RectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectViewController.swift; sourceTree = "<group>"; };
+		508785951E117B6F00D18C87 /* CustomRectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRectView.swift; sourceTree = "<group>"; };
+		508785971E1184C900D18C87 /* CustomArcView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomArcView.swift; sourceTree = "<group>"; };
+		508785991E11867500D18C87 /* ArcViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArcViewController.swift; sourceTree = "<group>"; };
+		5087859B1E118D3C00D18C87 /* CustomEllipseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomEllipseView.swift; sourceTree = "<group>"; };
+		5087859D1E118EAD00D18C87 /* EllipseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EllipseViewController.swift; sourceTree = "<group>"; };
 		50A8913F1E102F600018FF6E /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		50A891411E10EC310018FF6E /* CustomTriangleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTriangleView.swift; sourceTree = "<group>"; };
 		50A891431E10F3760018FF6E /* TriangleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangleViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +149,9 @@
 				50C3AEB51E0FA0FE00DE4228 /* ViewController.swift */,
 				50A8913F1E102F600018FF6E /* ContainerViewController.swift */,
 				50A891431E10F3760018FF6E /* TriangleViewController.swift */,
+				508785931E117AAD00D18C87 /* RectViewController.swift */,
+				508785991E11867500D18C87 /* ArcViewController.swift */,
+				5087859D1E118EAD00D18C87 /* EllipseViewController.swift */,
 				50C3AEB71E0FA0FE00DE4228 /* Main.storyboard */,
 				50C3AEBA1E0FA0FE00DE4228 /* Assets.xcassets */,
 				50C3AEBC1E0FA0FE00DE4228 /* LaunchScreen.storyboard */,
@@ -204,7 +221,11 @@
 			children = (
 				50C3AF011E10195D00DE4228 /* DrawEyeView.swift */,
 				50C3AF021E10195D00DE4228 /* DrawTriangleView.swift */,
+				508785911E11789B00D18C87 /* CustomDrawView.swift */,
 				50A891411E10EC310018FF6E /* CustomTriangleView.swift */,
+				508785951E117B6F00D18C87 /* CustomRectView.swift */,
+				508785971E1184C900D18C87 /* CustomArcView.swift */,
+				5087859B1E118D3C00D18C87 /* CustomEllipseView.swift */,
 			);
 			path = "Custom Drawing";
 			sourceTree = "<group>";
@@ -327,8 +348,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5087859E1E118EAD00D18C87 /* EllipseViewController.swift in Sources */,
 				50A891441E10F3760018FF6E /* TriangleViewController.swift in Sources */,
+				5087859A1E11867500D18C87 /* ArcViewController.swift in Sources */,
 				50C3AEB61E0FA0FE00DE4228 /* ViewController.swift in Sources */,
+				508785941E117AAD00D18C87 /* RectViewController.swift in Sources */,
 				50A891401E102F600018FF6E /* ContainerViewController.swift in Sources */,
 				50C3AEB41E0FA0FE00DE4228 /* AppDelegate.swift in Sources */,
 			);
@@ -343,7 +367,9 @@
 				50C3AEEF1E0FA13D00DE4228 /* SKSpriteNode.swift in Sources */,
 				50C3AF041E10195D00DE4228 /* DrawTriangleView.swift in Sources */,
 				50C3AEEB1E0FA13D00DE4228 /* CGSize.swift in Sources */,
+				508785961E117B6F00D18C87 /* CustomRectView.swift in Sources */,
 				50C3AEE91E0FA13D00DE4228 /* CGPoint.swift in Sources */,
+				508785921E11789B00D18C87 /* CustomDrawView.swift in Sources */,
 				50C3AEF31E0FA13D00DE4228 /* UIImageView.swift in Sources */,
 				50C3AEEC1E0FA13D00DE4228 /* CGVector.swift in Sources */,
 				50C3AEEA1E0FA13D00DE4228 /* CGRect.swift in Sources */,
@@ -354,6 +380,8 @@
 				50C3AEE81E0FA13D00DE4228 /* CGFloat.swift in Sources */,
 				50C3AEF11E0FA13D00DE4228 /* GifUIImageView.swift in Sources */,
 				50A891421E10EC310018FF6E /* CustomTriangleView.swift in Sources */,
+				5087859C1E118D3C00D18C87 /* CustomEllipseView.swift in Sources */,
+				508785981E1184C900D18C87 /* CustomArcView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
