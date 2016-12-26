@@ -43,5 +43,6 @@ public class DrawTriangleView: UIView {
         
         fillColor.setFill()
         linePath.fill()
+ 
     }
 }

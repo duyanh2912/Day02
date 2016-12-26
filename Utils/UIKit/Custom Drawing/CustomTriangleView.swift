@@ -41,6 +41,14 @@ public class CustomTriangleView: CustomDrawView {
         
         triangePath.lineWidth = 1
         UIColor.black.setStroke()
+        
+        let rotatingAngle = CGFloat.pi / 2 - acos((a*a/4 + m*m - c*c) / (m*a))
+        let ctx = UIGraphicsGetCurrentContext()
+        ctx?.translateBy(x: 0.5 * rect.size.width, y: 0.5 * rect.size.height)
+        ctx?.rotate(by: -rotatingAngle)
+        ctx?.translateBy(x: -0.5 * rect.size.width, y: -0.5 * rect.size.height)
+        
         triangePath.stroke()
+        print(rotatingAngle / CGFloat.pi * 180)
     }
 }
