@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		50A891401E102F600018FF6E /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A8913F1E102F600018FF6E /* ContainerViewController.swift */; };
+		50A891421E10EC310018FF6E /* CustomTriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A891411E10EC310018FF6E /* CustomTriangleView.swift */; };
+		50A891441E10F3760018FF6E /* TriangleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A891431E10F3760018FF6E /* TriangleViewController.swift */; };
 		50C3AEB41E0FA0FE00DE4228 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C3AEB31E0FA0FE00DE4228 /* AppDelegate.swift */; };
 		50C3AEB61E0FA0FE00DE4228 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C3AEB51E0FA0FE00DE4228 /* ViewController.swift */; };
 		50C3AEB91E0FA0FE00DE4228 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C3AEB71E0FA0FE00DE4228 /* Main.storyboard */; };
@@ -59,6 +61,8 @@
 
 /* Begin PBXFileReference section */
 		50A8913F1E102F600018FF6E /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		50A891411E10EC310018FF6E /* CustomTriangleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTriangleView.swift; sourceTree = "<group>"; };
+		50A891431E10F3760018FF6E /* TriangleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangleViewController.swift; sourceTree = "<group>"; };
 		50C3AEB01E0FA0FE00DE4228 /* Day02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Day02.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50C3AEB31E0FA0FE00DE4228 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50C3AEB51E0FA0FE00DE4228 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +134,7 @@
 				50C3AEB31E0FA0FE00DE4228 /* AppDelegate.swift */,
 				50C3AEB51E0FA0FE00DE4228 /* ViewController.swift */,
 				50A8913F1E102F600018FF6E /* ContainerViewController.swift */,
+				50A891431E10F3760018FF6E /* TriangleViewController.swift */,
 				50C3AEB71E0FA0FE00DE4228 /* Main.storyboard */,
 				50C3AEBA1E0FA0FE00DE4228 /* Assets.xcassets */,
 				50C3AEBC1E0FA0FE00DE4228 /* LaunchScreen.storyboard */,
@@ -199,6 +204,7 @@
 			children = (
 				50C3AF011E10195D00DE4228 /* DrawEyeView.swift */,
 				50C3AF021E10195D00DE4228 /* DrawTriangleView.swift */,
+				50A891411E10EC310018FF6E /* CustomTriangleView.swift */,
 			);
 			path = "Custom Drawing";
 			sourceTree = "<group>";
@@ -321,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50A891441E10F3760018FF6E /* TriangleViewController.swift in Sources */,
 				50C3AEB61E0FA0FE00DE4228 /* ViewController.swift in Sources */,
 				50A891401E102F600018FF6E /* ContainerViewController.swift in Sources */,
 				50C3AEB41E0FA0FE00DE4228 /* AppDelegate.swift in Sources */,
@@ -346,6 +353,7 @@
 				50C3AEF21E0FA13D00DE4228 /* UIButton.swift in Sources */,
 				50C3AEE81E0FA13D00DE4228 /* CGFloat.swift in Sources */,
 				50C3AEF11E0FA13D00DE4228 /* GifUIImageView.swift in Sources */,
+				50A891421E10EC310018FF6E /* CustomTriangleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
