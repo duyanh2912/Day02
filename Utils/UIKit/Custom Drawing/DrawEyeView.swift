@@ -12,33 +12,16 @@ import UIKit
 public class DrawEyeView: UIView {
     @IBInspectable public var widthToHeightRatio: CGFloat = 3
     @IBInspectable public var lineWitdh: CGFloat = 1
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        self.backgroundColor = .clear
-    }
-    
-    required public init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
-    
-    public override func layoutSubviews() {
-        super.layoutSubviews()
-    }
-    
+  
     public override func draw(_ rect: CGRect) {
-        let ctx = UIGraphicsGetCurrentContext()
-        ctx?.clear(rect)
-        
-        
         let drawY: CGFloat
         let drawX: CGFloat
         
         if frame.width / frame.height > widthToHeightRatio {
-            drawY = frame.height - lineWitdh
+            drawY = frame.height * (1 - lineWitdh / 1000)
             drawX = frame.height * widthToHeightRatio
         } else {
-            drawX = frame.width - lineWitdh * widthToHeightRatio
+            drawX = frame.width - frame.width * lineWitdh / 1000 * widthToHeightRatio
             drawY = frame.width / widthToHeightRatio
         }
         
@@ -49,7 +32,7 @@ public class DrawEyeView: UIView {
         eyePath.addArc(withCenter: drawRect.center(), radius: drawRect.height / 2, startAngle: -CGFloat.pi / 2, endAngle: 2 * CGFloat.pi - CGFloat.pi / 2, clockwise: true)
         
         UIColor.black.setStroke()
-        eyePath.lineWidth = lineWitdh
+        eyePath.lineWidth = lineWitdh * frame.height / 1000
         eyePath.stroke()
         
         let upperAnchor = drawRect.center().add(x: 0, y: -drawY / 2)
@@ -77,7 +60,7 @@ public class DrawEyeView: UIView {
                      endAngle: -(CGFloat.pi - 2 * angle) + CGFloat.pi / 2,
                      clockwise: false)
         curve.close()
-        curve.lineWidth = lineWitdh
+        curve.lineWidth = lineWitdh * frame.height / 1000
         curve.stroke()
     }
 }

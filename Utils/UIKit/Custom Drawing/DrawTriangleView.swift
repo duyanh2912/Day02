@@ -20,9 +20,9 @@ public class DrawTriangleView: UIView {
         
         let a: CGFloat
         if height / width < ratio {
-            a = (height - 2 * lineWidth) / ratio
+            a = (height - 2 * lineWidth * height / 1000) / ratio
         } else {
-            a = width - 2 * lineWidth
+            a = width - 2 * lineWidth * height / 1000
         }
         
         let center = CGPoint(x: frame.width / 2, y: frame.height / 2)
@@ -38,7 +38,7 @@ public class DrawTriangleView: UIView {
         linePath.close()
         
         strokeColor.setStroke()
-        linePath.lineWidth = lineWidth
+        linePath.lineWidth = lineWidth * height / 1000
         linePath.stroke()
         
         fillColor.setFill()
