@@ -294,7 +294,7 @@
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="WZb-2M-Whq">
                                         <rect key="frame" x="-2" y="0.0" width="724" height="31"/>
                                         <connections>
-                                            <action selector="factorChanged:" destination="FKh-V7-O10" eventType="valueChanged" id="nmo-0n-bwJ"/>
+                                            <action selector="factorChanged:" destination="FKh-V7-O10" eventType="valueChanged" id="LIB-y5-k1I"/>
                                         </connections>
                                     </slider>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="cZg-97-Apd">
@@ -375,7 +375,7 @@
                                 </constraints>
                                 <state key="normal" image="illuminati"/>
                                 <connections>
-                                    <action selector="illuminati:" destination="FKh-V7-O10" eventType="touchUpInside" id="krC-iG-MXm"/>
+                                    <action selector="illuminati:" destination="FKh-V7-O10" eventType="touchUpInside" id="dzk-Ye-3OV"/>
                                 </connections>
                             </button>
                             <view opaque="NO" contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="3qG-xg-Cn6" customClass="CustomTriangleView" customModule="Utils">
@@ -416,14 +416,14 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="areaLabel" destination="sO0-yU-Jyi" id="grW-C5-fDe"/>
-                        <outlet property="bottomConstraint" destination="6rx-Qv-o1t" id="YIY-th-73U"/>
-                        <outlet property="drawView" destination="3qG-xg-Cn6" id="bxx-FH-Zij"/>
-                        <outlet property="factorSlide" destination="WZb-2M-Whq" id="PAW-3T-dhE"/>
-                        <outlet property="firstEdgeText" destination="Z30-hx-ozr" id="HXu-LK-Btc"/>
-                        <outlet property="perimeterLabel" destination="gAc-Q4-XsL" id="RFX-6U-1V8"/>
-                        <outlet property="secondEdgeText" destination="uQu-fQ-ixb" id="6Hc-sN-994"/>
-                        <outlet property="thirdEdgeText" destination="i0R-D0-q3W" id="og2-wb-dIy"/>
+                        <outlet property="areaLabel" destination="sO0-yU-Jyi" id="5FO-yA-20E"/>
+                        <outlet property="bottomConstraint" destination="6rx-Qv-o1t" id="pUB-VP-IPi"/>
+                        <outlet property="drawView" destination="3qG-xg-Cn6" id="2Sz-oV-9D9"/>
+                        <outlet property="factorSlide" destination="WZb-2M-Whq" id="XOc-3t-aDY"/>
+                        <outlet property="firstEdgeText" destination="Z30-hx-ozr" id="IcB-hq-Tqu"/>
+                        <outlet property="perimeterLabel" destination="gAc-Q4-XsL" id="Ld0-fd-oW2"/>
+                        <outlet property="secondEdgeText" destination="uQu-fQ-ixb" id="JI9-h4-x3z"/>
+                        <outlet property="thirdEdgeText" destination="i0R-D0-q3W" id="zD7-ii-X5r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eHz-nu-K4E" userLabel="First Responder" sceneMemberID="firstResponder"/>

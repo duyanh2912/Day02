@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     }
     
     func changedSegment(_ sender: UISegmentedControl) {
+        // self.childViewControllers[0] is a ContainerViewController
+        
         if let title = sender.titleForSegment(at: sender.selectedSegmentIndex) {
         self.childViewControllers[0].performSegue(withIdentifier: "ContainerTo\(title)", sender: nil)
         }

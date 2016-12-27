@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ArcViewController: TriangleViewController {
+class ArcViewController: BaseViewController {
     @IBOutlet weak var radiusText: UITextField!
     @IBOutlet weak var degreeText: UITextField!
     
@@ -25,7 +25,7 @@ class ArcViewController: TriangleViewController {
         updateStats()
     }
     
-    override func updateStats() {
+    func updateStats() {
         guard let arc = drawView as? CustomArcView else { return }
         
         let r = arc.radius
@@ -47,9 +47,6 @@ class ArcViewController: TriangleViewController {
     
     override func initialConfig() {
         guard let arc = drawView as? CustomArcView else { return }
-        
-        radiusText.delegate = self
-        degreeText.delegate = self
         
         radiusText.text = arc.radius.description
         degreeText.text = arc.angleInDegree.description

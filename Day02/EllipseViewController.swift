@@ -27,10 +27,7 @@ class EllipseViewController: TriangleViewController {
     
     override func initialConfig() {
         guard let ellipse = drawView as? CustomEllipseView else { return }
-        
-        firstRadiusText.delegate = self
-        secondRadiusText.delegate = self
-        
+       
         firstRadiusText.text = ellipse.firstRadius.description
         secondRadiusText.text = ellipse.secondRadius.description
     }

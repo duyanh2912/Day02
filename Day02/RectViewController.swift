@@ -8,7 +8,9 @@
 
 import UIKit
 
-class RectViewController: TriangleViewController {
+class RectViewController: BaseViewController {
+    @IBOutlet weak var firstEdgeText: UITextField!
+    @IBOutlet weak var secondEdgeText: UITextField!
     
     override func updateDrawView() {
         guard let rect = drawView as? CustomRectView else { return }
@@ -24,7 +26,7 @@ class RectViewController: TriangleViewController {
         updateStats()
     }
     
-    override func updateStats() {
+    func updateStats() {
         guard let firstEdge = Float(firstEdgeText.text!),
             let secondEdge = Float(secondEdgeText.text!)
             else { return }
@@ -36,21 +38,7 @@ class RectViewController: TriangleViewController {
     override func initialConfig() {
         guard let rect = drawView as? CustomRectView else { return }
         
-        firstEdgeText.delegate = self
-        secondEdgeText.delegate = self
-        
         firstEdgeText.text = rect.firstEdge.description
         secondEdgeText.text = rect.secondEdge.description
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

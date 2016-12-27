@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		504AE3D81E12D4A00071ECD8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504AE3D71E12D4A00071ECD8 /* BaseViewController.swift */; };
 		508785921E11789B00D18C87 /* CustomDrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508785911E11789B00D18C87 /* CustomDrawView.swift */; };
 		508785941E117AAD00D18C87 /* RectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508785931E117AAD00D18C87 /* RectViewController.swift */; };
 		508785961E117B6F00D18C87 /* CustomRectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508785951E117B6F00D18C87 /* CustomRectView.swift */; };
@@ -67,6 +68,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		504AE3D71E12D4A00071ECD8 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		508785911E11789B00D18C87 /* CustomDrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDrawView.swift; sourceTree = "<group>"; };
 		508785931E117AAD00D18C87 /* RectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectViewController.swift; sourceTree = "<group>"; };
 		508785951E117B6F00D18C87 /* CustomRectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRectView.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				50C3AEB31E0FA0FE00DE4228 /* AppDelegate.swift */,
 				50C3AEB51E0FA0FE00DE4228 /* ViewController.swift */,
 				50A8913F1E102F600018FF6E /* ContainerViewController.swift */,
+				504AE3D71E12D4A00071ECD8 /* BaseViewController.swift */,
 				50A891431E10F3760018FF6E /* TriangleViewController.swift */,
 				508785931E117AAD00D18C87 /* RectViewController.swift */,
 				508785991E11867500D18C87 /* ArcViewController.swift */,
@@ -353,6 +356,7 @@
 				5087859A1E11867500D18C87 /* ArcViewController.swift in Sources */,
 				50C3AEB61E0FA0FE00DE4228 /* ViewController.swift in Sources */,
 				508785941E117AAD00D18C87 /* RectViewController.swift in Sources */,
+				504AE3D81E12D4A00071ECD8 /* BaseViewController.swift in Sources */,
 				50A891401E102F600018FF6E /* ContainerViewController.swift in Sources */,
 				50C3AEB41E0FA0FE00DE4228 /* AppDelegate.swift in Sources */,
 			);
